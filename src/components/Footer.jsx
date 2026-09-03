@@ -1,0 +1,22 @@
+import { profile } from '../data.js'
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="container footer__inner">
+        <p>
+          © {new Date().getFullYear()} {profile.name}. Built with React.
+        </p>
+        <div className="footer__links">
+          <a href={profile.linkedin} target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a href={profile.github} target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a href={`mailto:${profile.email}`}>Email</a>
+        </div>
+      </div>
+    </footer>
+  )
+}

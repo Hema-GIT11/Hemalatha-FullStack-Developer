@@ -7,6 +7,7 @@ export const profile = {
   email: 'hemaganapathy26@gmail.com',
   linkedin: 'https://linkedin.com/in/hemaganapathy26',
   github: 'https://github.com/hemaganapathy26',
+  resumeUrl: '/Hemalatha_G_Resume.pdf',
   summary:
     'Full Stack Developer with proven experience in React.js, Node.js, Express, and MySQL, delivering scalable and high-performing web applications. Skilled in building admin dashboards, workflow automation systems, and complex data management solutions with a focus on efficiency, usability, and maintainability. Expertise spans frontend architecture, RESTful API integration, and backend optimization — translating business requirements into robust, production-ready technical solutions from concept to deployment.',
 }
@@ -80,6 +81,7 @@ export const projects = [
   {
     name: 'MBS (Memaar Building Systems)',
     stack: ['React', 'TypeScript', 'Node.js', 'Express.js', 'MySQL', 'Redux', 'JWT'],
+    private: true,
     points: [
       'Designed and built an enterprise workflow management system with configurable approval hierarchies and department role masters.',
       'Executed Job Enquiry and Contract Change Order modules with multi-level review and staged approvals.',
@@ -89,6 +91,7 @@ export const projects = [
   {
     name: 'INAE Membership Panel',
     stack: ['React.js', 'Node.js', 'Express.js', 'MySQL', 'JWT', 'Razorpay'],
+    private: true,
     points: [
       'Architected a government-grade membership platform with multi-role RBAC and mechanized approval workflows.',
       'Integrated Razorpay payment gateway with automated invoicing and receipt generation.',
@@ -98,6 +101,7 @@ export const projects = [
   {
     name: 'LMGGT – Inventory & Stock Management',
     stack: ['React.js', 'Node.js', 'MySQL', 'REST APIs'],
+    private: true,
     points: [
       'Engineered a real-time inventory system managing 1,000+ SKUs with bulk uploads, stock transfers, and inventory adjustments.',
       'Implemented tax invoice generation with structured API integration across frontend and backend layers.',
@@ -107,6 +111,7 @@ export const projects = [
   {
     name: 'Kutti & Kasi – Business Management Platform',
     stack: ['React.js', 'Express.js', 'MariaDB', 'MUI', 'JWT'],
+    private: true,
     points: [
       'Constructed a business operations platform with inventory tracking, lead management, and follow-up scheduling.',
       'Automated quotation generation and follow-up workflows, slashing manual effort by 50%.',
@@ -115,6 +120,7 @@ export const projects = [
   {
     name: 'PUS (Meri Life) – Tamil Nadu Government Volunteer Portal',
     stack: ['React.js', 'Node.js', 'Express.js', 'MySQL'],
+    private: true,
     points: [
       'Spearheaded a volunteer management system for 500+ volunteers with attendance tracking, event coordination, and leaderboard ranking.',
       'Computerized PDF certificate generation with dynamic data population and role-based access control.',

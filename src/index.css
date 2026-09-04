@@ -1,45 +1,17 @@
+/* Committed dark "developer" theme — matches the hero everywhere, no light-mode toggle */
 :root {
-  --bg: #f7f8fc;
-  --bg-alt: #eef1fa;
-  --surface: #ffffff;
-  --text: #16182b;
-  --text-muted: #5b5f78;
-  --border: #e4e6f2;
-  --primary: #5b4bff;
-  --primary-dark: #3f2fe0;
-  --accent: #14b8a6;
-  --shadow: 0 10px 30px -12px rgba(30, 30, 70, 0.15);
-  --radius: 16px;
-  color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0d0e1a;
-    --bg-alt: #12142a;
-    --surface: #171933;
-    --text: #f1f2fb;
-    --text-muted: #a3a6c2;
-    --border: #2a2d4d;
-    --primary: #8b7bff;
-    --primary-dark: #a698ff;
-    --accent: #2dd4bf;
-    --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.5);
-    color-scheme: dark;
-  }
-}
-
-:root[data-theme="dark"] {
-  --bg: #0d0e1a;
-  --bg-alt: #12142a;
-  --surface: #171933;
+  --bg: #08091a;
+  --bg-alt: #0e0f24;
+  --surface: #12142a;
+  --surface-hover: #171933;
   --text: #f1f2fb;
   --text-muted: #a3a6c2;
-  --border: #2a2d4d;
+  --border: #262a4a;
   --primary: #8b7bff;
   --primary-dark: #a698ff;
   --accent: #2dd4bf;
-  --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.5);
+  --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.55);
+  --radius: 16px;
   color-scheme: dark;
 }
 
@@ -270,9 +242,12 @@ a {
 }
 
 .typewriter {
+  display: inline-block;
+  min-width: 10.5ch;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: var(--accent);
+  text-align: left;
 }
 
 .typewriter__cursor {
@@ -793,10 +768,46 @@ a {
 
 .project-card h3 {
   font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.project-card__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 14px;
 }
 
 .project-card .tag-list {
   margin-bottom: 14px;
+}
+
+.project-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.project-card__link {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.project-card__link:hover {
+  text-decoration: underline;
+}
+
+.project-card__note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 /* Education */

@@ -14,7 +14,10 @@ export default function Projects() {
         <div className="projects-grid">
           {projects.map((project, i) => (
             <Reveal key={project.name} delay={(i % 3) * 90} as="article" className="card project-card">
-              <h3>{project.name}</h3>
+              <div className="project-card__head">
+                <h3>{project.name}</h3>
+                {project.private && <span className="badge badge--muted">🔒 Client project</span>}
+              </div>
               <div className="tag-list">
                 {project.stack.map((s) => (
                   <span key={s} className="tag tag--outline">
@@ -27,6 +30,21 @@ export default function Projects() {
                   <li key={j}>{point}</li>
                 ))}
               </ul>
+              <div className="project-card__links">
+                {project.repoUrl && (
+                  <a href={project.repoUrl} target="_blank" rel="noreferrer" className="project-card__link">
+                    Code ↗
+                  </a>
+                )}
+                {project.demoUrl && (
+                  <a href={project.demoUrl} target="_blank" rel="noreferrer" className="project-card__link">
+                    Live demo ↗
+                  </a>
+                )}
+                {project.private && !project.repoUrl && !project.demoUrl && (
+                  <span className="project-card__note">Codebase is private under client NDA</span>
+                )}
+              </div>
             </Reveal>
           ))}
         </div>

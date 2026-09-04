@@ -31,6 +31,9 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
+          <a href={profile.resumeUrl} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>
+            Resume
+          </a>
           <a href={`mailto:${profile.email}`} className="navbar__cta">
             Hire Me
           </a>

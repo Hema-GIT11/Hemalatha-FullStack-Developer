@@ -82,6 +82,9 @@ export default function Hero() {
             <a className="btn btn--primary" href="#contact">
               Get in touch
             </a>
+            <a className="btn btn--ghost btn--on-dark" href={profile.resumeUrl} target="_blank" rel="noreferrer">
+              📄 Download Resume
+            </a>
             <a className="btn btn--ghost btn--on-dark" href="#projects">
               View projects
             </a>

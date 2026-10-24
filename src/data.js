@@ -13,10 +13,18 @@ export const profile = {
 }
 
 export const stats = [
+  { label: 'Projects Completed', value: '5+' },
+  { label: 'SaaS & AI Clients', value: '10+' },
   { label: 'Years Experience', value: '1.5+' },
-  { label: 'Live Platforms', value: '5+' },
-  { label: 'Active Users Supported', value: '1,000+' },
-  { label: 'API Response Boost', value: '35%' },
+  { label: 'Client Satisfaction', value: '98%' },
+]
+
+export const companies = [
+  { name: 'ImaginetVentures', logo: '🏢' },
+  { name: 'MBS', logo: '🏗️' },
+  { name: 'INAE', logo: '🏛️' },
+  { name: 'Tamil Nadu Govt', logo: '🇮🇳' },
+  { name: 'Kutti & Kasi', logo: '💼' },
 ]
 
 export const skills = [
